@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css">
     <title>Async Audio</title>
 
     <link
@@ -12,13 +13,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
-    <h1 class="text-8xl font-bold underline">Hello world!</h1>
-
-    <i class="fa-solid fa-play"></i>
+  <body class="box-border w-auto h-auto bg-gradient-to-b from-cyan-300 to-blue-700 bg-no-repeat">
+    <div class="container">
+     
+      <div class="flex flex-col w-auto h-auto  bg-blue-500 justify-center lg:ml-96 lg:mr-96 mb-8 max-lg:m-10 mt-7 shadow-2xl pt-5 pl-5 pr-5">
+        <div class="navbar flex flex-row justify-evenly pt-5 gap-9">
+          <a href="#"><img src="icons/arrow-down.svg" class="w-8"></a>
+          <p class="text-white text-md font-bold">Play Suggested Song</p>
+          <a href=""><img src="icons/three-dots.svg" class="w-8"></a>
+        </div>
+        <div class="picture flex flex-row justify-center pt-6 pl-6 pr-6">
+          <img class="w-auto" src="albumart/mountain.jpg" alt="">
+        </div>
+        <div class="flex flex-col pt-6 pl-6 pr-6 lg:pl-7">
+          <h1 class="text-4xl text-white">Perfect</h1>
+          <h2 class="text-xl text-gray-300 font-semibold">Ed Sheeran</h2>
+        </div>
+        <div class="seekbar flex flex-row justify-evenly pt-7">
+          <div class="appearance-none w-11/12 max-lg:w-11/12 h-2 bg-white outline-none rounded-md opacity-70"></div>
+        </div>
+        <div class="flex flex-row pl-6 pr-6 pt-2 justify-between text-gray-300">
+          <p>0:00</p>
+          <p>0:00</p>
+        </div>
+        <div class="play-pause flex flex-row justify-evenly pt-6 pl-6 pr-6  ">
+          <a href="" class="p-7"><img class="w-8" src="icons/back.svg" alt=""></a>
+          <a href="#"><div class="bg-white p-7 rounded-full"><img class="w-8" src="icons/play.svg" alt=""></div></a>
+          <a href="" class="p-7"><img class="w-8" src="icons/forward.svg" alt=""></a>
+        </div>
+        <div class="devices flex flex-row justify-between  pt-6 pl-6 pr-6">
+          <a href="#"><img class="w-8" src="icons/devices.svg" alt=""></a>
+          <a href="#"><img class="w-8" src="icons/share.svg" alt=""></a>
+        </div>
+        <div class="footer flex flex-row bg-cyan-400 ml-4 mr-4 justify-between rounded-t-md pt-5 pl-5 pr-5 mt-7">
+          <div class="p-2">
+            <p class="text-white font-bold">Lyrics</p>
+          </div>
+          <div class="flex flex-row gap-4 pb-3">
+            <a href="#"><div class="bg-black p-2 rounded-full bg-opacity-40"><img class="w-8" src="icons/share.svg" alt=""></div></a>
+            <a href="#"><div class="bg-black p-2 rounded-full bg-opacity-40"><img class="w-8" src="icons/expand.svg" alt=""></div></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
 
     <script src="main.js"></script>
   </body>
