@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugly Audio Player</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #666;
+            text-align: center;
+            font-family: "Special Elite", serif;
+            /* font-family: "Comic Sans MS", cursive, sans-serif; */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff, #ff0000, #ffff00);
+
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+        #ugly-audio-player {
+            border: 5px solid pink;
+            background-color: yellow;
+            padding: 20px;
+            width: 400px;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+        #song-title {
+            color: blue;
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+        #albumart img {
+            aspect-ratio: 1;
+            object-fit: cover; 
+        }
+
+        #audio-controls {
+            margin-top: 20px;
+            background-color: green;
+            padding: 10px;
+            width:100%;
+        }
+
+        button {
+            font-family: "Special Elite", serif;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: pink;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="ugly-audio-player">
+        <div id="song-title">Krispie Kreme Donuts</div>
+        <div id="artist">Evan Kahan</div>
+
+        <div id="albumart">
+            <img src="albumart/mountain.jpg" alt="" srcset="">
+        </div>
+        <audio controls id="audio-controls">
+            <source src="your-audio-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button>Prev</button>
+        <button>Play</button>
+        <button>Next</button>
+    </div>
+</body>
+</html>
